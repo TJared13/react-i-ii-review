@@ -4,9 +4,15 @@ Answer these on your own, then compare answers as a group
 
 1.  What is state?
 
+    State is an element of a Component class that is used to store data, that can then be passed to child components.  State is an object in React, so we must treat it as such (this.state.element).
+
 2.  Where do you set initial state?
 
+    The initial state is set in the constructor element, underneath the call of super(), of a class using 'this.state = '
+
 3.  What method do you use to update state?
+    We use the setState method to update state values.  When we call setState, we need to send in an object that specifies our target properties that need changed, along with values.  Example:
+    this.setState({elem: val})
 
 ### Understand
 
@@ -40,6 +46,7 @@ class LeadMentor extends Component {
   }
 }
 ```
+This code is creating a component called LeadMentor.  LeadMentor is displaying the questions answered from its state in it's return.  It provides functionality for a user to increase the number of questions answered held in state by invoking the handleClick method.  When the state value for questions gets updated by button click, the component re-renders showing the updated number.
 
 ### Apply
 

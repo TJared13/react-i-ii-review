@@ -4,15 +4,27 @@ Answer these on your own, then compare answers as a group
 
 1.  What is React?
 
+    Developed by Facebook, React is a javascript library for frontend interface  and UI component development.  React allows for each element or 'component' to be separated into individual files of code.  This is called Component based architecture.  It utilizes its own virtual DOM for ease of development. 
+
 2.  What is create-react-app?
+
+    create-react-app and an included react package that allows a developer to initiate a new project using a single terminal command, as opposed to compiling the project from scratch.  It also sets up a developer server that is auto-refreshed with changes.
 
 3.  What is Component Based Architecture?
 
+    Component based architecture, as used in react, is a form of development structure that utilizes separate "component" files that can then link together in a parent element.
+
 4.  What is JSX?
+
+    JSX (Javascript xml) is a javascript extension that allows incorporation of inline javascript and html syntax.
 
 5.  What is the virtual DOM?
 
+    A virtual DOM is a light representation of the actual DOM. The virtual DOM only updates changes made to code, allowing faster update times as it does not have to re-render all the code.
+
 6.  What is unidirectional (one-way) data flow?
+
+    Unidirectional data flow is when data is passed from Parent to Child.  This Data is read only, children cannot change the data of the parent element.
 
 ### Understand
 
@@ -39,6 +51,8 @@ export default Mentor;
 ```
 
 9.  Explain how data is passed from a parent component to a child component.
+
+Data is passed from parent to child by passing props as a function parameter.
 
 ### Apply
 
